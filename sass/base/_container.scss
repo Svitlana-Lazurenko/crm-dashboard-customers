@@ -1,0 +1,30 @@
+.container {
+  width: 100%;
+  max-width: 1640px;
+  margin: 0 auto;
+  padding-left: 10px;
+  padding-right: 10px;
+
+  @include media(md) {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  @include media(mg) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  & &,
+  &--no-gap {
+    padding: 0;
+  }
+
+  &--full {
+    max-width: 100%;
+  }
+
+  &--flex {
+    display: flex;
+  }
+}

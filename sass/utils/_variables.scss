@@ -1,0 +1,27 @@
+// Map of breakpoints
+$breakpoints: (
+  st: 320px,
+  xs: 360px,
+  psw: 412px,
+  sm: 480px,
+  ms: 640px,
+  psh: 732px,
+  md: 768px,
+  mf: 921px,
+  def: 1024px,
+  hg: 1150px,
+  lg: 1280px,
+  xl: 1366px,
+  mg: 1440px,
+  note: 1536px,
+  container: 1610px,
+  dt: 1920px,
+);
+
+// Fonts
+$font-base: 'Poppins', sans-serif;
+
+// Colors
+$color-primary: #58519d;
+$color-secondary: #8fbfba;
+$color-accent: #9a3553;

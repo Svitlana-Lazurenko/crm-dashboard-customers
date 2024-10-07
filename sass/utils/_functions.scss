@@ -1,0 +1,63 @@
+@use 'sass:math';
+
+// ============== em-rem ==============================
+@function em($value, $base: 18px, $unit: 1em) {
+  @if not unitless($value) {
+    $value: strip-units($value);
+  }
+  @if not unitless($base) {
+    $base: strip-units($base);
+  }
+  @return math.div($value, $base) * $unit;
+}
+
+@function rem($value, $base: 18px) {
+  @return em($value, $base, 1rem);
+}
+
+@function perc($value, $base) {
+  @return math.div(calc($value * 100), $base) * 1%;
+}
+
+// ======================== strip-units ============================
+@function strip-units($number) {
+  @if type-of($number) == 'number' and not unitless($number) {
+    @return math.div($number, $number * 0 + 1);
+  }
+  @return $number;
+}
+
+// ==================== svg-sizes ==================================
+@function svg-height($width_need, $width_original, $height_original) {
+  @return math.div($width_need * $height_original, $width_original) + px;
+}
+
+@function svg-width($height_need, $width_original, $height_original) {
+  @return math.div($width_original * $height_need, $height_original) + px;
+}
+
+// ========================= toRGB ==================================
+@function toRGB($color) {
+  @return 'rgb(' + red($color) + ', ' + green($color) + ', ' + blue($color) + ')';
+}
+
+// ============================== vw-vh ===========================
+@function vw($value, $base: 19.2px) {
+  @if not unitless($value) {
+    $value: strip-units($value);
+  }
+  @if not unitless($base) {
+    $base: strip-units($base);
+  }
+  @return math.div($value, $base) * 1vw;
+}
+
+@function vh($value, $base: 10.8px) {
+  @if not unitless($value) {
+    $value: strip-units($value);
+  }
+  @if not unitless($base) {
+    $base: strip-units($base);
+  }
+  @return math.div($value, $base) * 1vh;
+}
