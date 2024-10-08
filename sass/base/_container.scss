@@ -25,6 +25,8 @@
   }
 
   &--flex {
-    display: flex;
+    @include media(md) {
+      display: flex;
+    }
   }
 }

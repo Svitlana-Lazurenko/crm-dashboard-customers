@@ -28,13 +28,19 @@
   </head>
 
   <body>
+    <header class="header">
+      <div class="container container--no-gap container--flex">
+        <h1 class="title">
+          <svg class="title__icon"><use href="./svg/sprite.svg#icon-setting"></use></svg
+          >Dashboard<span class="title__version">v.01</span>
+        </h1>
+        <p class="welcome-text">Hello, <span>Evano</span> 👋🏼</p>
+      </div>
+    </header>
+
     <main>
       <div class="container container--no-gap container--flex">
         <aside class="sidebar">
-          <h1 class="sidebar-title">
-            <svg class="sidebar-title__icon"><use href="./svg/sprite.svg#icon-setting"></use></svg
-            >Dashboard<span class="sidebar-title__version">v.01</span>
-          </h1>
           <nav class="menu">
             <ul class="menu__list">
               <li class="menu__item">
@@ -110,131 +116,128 @@
           </div>
         </aside>
 
-        <div class="dashboard">
-          <p class="welcome-text">Hello, <span>Evano</span> 👋🏼</p>
-          <section class="customers">
-            <div class="customers-about">
-              <div class="customers-about__text">
-                <h2 class="customers-about__title">All Customers</h2>
-                <p class="customers-about__category">Active Members</p>
-              </div>
-              <form class="search-form" name="search_form">
-                <label for="search" class="visually-hidden">Search</label>
-                <input
-                  class="search-form__input"
-                  name="search"
-                  type="text"
-                  placeholder="Search"
-                  id="search"
-                />
-                <button class="search-form__button" type="submit">
-                  <svg class="search-form__icon">
-                    <use href="./svg/sprite.svg#icon-search"></use>
-                  </svg>
-                </button>
-              </form>
+        <section class="customers">
+          <div class="customers-about">
+            <div class="customers-about__text">
+              <h2 class="customers-about__title">All Customers</h2>
+              <p class="customers-about__category">Active Members</p>
             </div>
+            <form class="search-form" name="search_form">
+              <label for="search" class="visually-hidden">Search</label>
+              <input
+                class="search-form__input"
+                name="search"
+                type="text"
+                placeholder="Search"
+                id="search"
+              />
+              <button class="search-form__button" type="submit">
+                <svg class="search-form__icon">
+                  <use href="./svg/sprite.svg#icon-search"></use>
+                </svg>
+              </button>
+            </form>
+          </div>
 
-            <table class="customers-table">
-              <tr>
-                <th>Customer Name</th>
-                <th>Company</th>
-                <th>Phone Number</th>
-                <th>Country</th>
-                <th>Маршрут</th>
-                <th>Status</th>
-              </tr>
-              <tr>
-                <td>Jane Cooper</td>
-                <td>Microsoft</td>
-                <td>(225) 555-0118</td>
-                <td>jane@microsoft.com</td>
-                <td>United States</td>
-                <td><div>Active</div></td>
-              </tr>
-              <tr>
-                <td>Floyd Miles</td>
-                <td>Yahoo</td>
-                <td>(205) 555-0100</td>
-                <td>floyd@yahoo.com</td>
-                <td>Kiribati</td>
-                <td><div>Inactive</div></td>
-              </tr>
-              <tr>
-                <td>Ronald Richards</td>
-                <td>Adobe</td>
-                <td>(302) 555-0107</td>
-                <td>ronald@adobe.com</td>
-                <td>Israel</td>
-                <td><div>Inactive</div></td>
-              </tr>
-              <tr>
-                <td>Marvin McKinney</td>
-                <td>Tesla</td>
-                <td>(252) 555-0126</td>
-                <td>marvin@tesla.com</td>
-                <td>Iran</td>
-                <td><div>Active</div></td>
-              </tr>
-              <tr>
-                <td>Jerome Bell</td>
-                <td>Google</td>
-                <td>(629) 555-0129</td>
-                <td>jerome@google.com</td>
-                <td>Réunion</td>
-                <td><div>Active</div></td>
-              </tr>
-              <tr>
-                <td>Kathryn Murphy</td>
-                <td>Microsoft</td>
-                <td>(406) 555-0120</td>
-                <td>kathryn@microsoft.com</td>
-                <td>Curaçao</td>
-                <td><div>Active</div></td>
-              </tr>
-              <tr>
-                <td>Jacob Jones</td>
-                <td>Yahoo</td>
-                <td>(208) 555-0112</td>
-                <td>jacob@yahoo.com</td>
-                <td>Brazil</td>
-                <td><div>Active</div></td>
-              </tr>
-              <tr>
-                <td>Kristin Watson</td>
-                <td>Facebook</td>
-                <td>(704) 555-0127</td>
-                <td>kristin@facebook.com</td>
-                <td>Åland Islands</td>
-                <td><div>Inactive</div></td>
-              </tr>
-            </table>
+          <table class="customers-table">
+            <tr>
+              <th>Customer Name</th>
+              <th>Company</th>
+              <th>Phone Number</th>
+              <th>Country</th>
+              <th>Маршрут</th>
+              <th>Status</th>
+            </tr>
+            <tr>
+              <td>Jane Cooper</td>
+              <td>Microsoft</td>
+              <td>(225) 555-0118</td>
+              <td>jane@microsoft.com</td>
+              <td>United States</td>
+              <td><div>Active</div></td>
+            </tr>
+            <tr>
+              <td>Floyd Miles</td>
+              <td>Yahoo</td>
+              <td>(205) 555-0100</td>
+              <td>floyd@yahoo.com</td>
+              <td>Kiribati</td>
+              <td><div>Inactive</div></td>
+            </tr>
+            <tr>
+              <td>Ronald Richards</td>
+              <td>Adobe</td>
+              <td>(302) 555-0107</td>
+              <td>ronald@adobe.com</td>
+              <td>Israel</td>
+              <td><div>Inactive</div></td>
+            </tr>
+            <tr>
+              <td>Marvin McKinney</td>
+              <td>Tesla</td>
+              <td>(252) 555-0126</td>
+              <td>marvin@tesla.com</td>
+              <td>Iran</td>
+              <td><div>Active</div></td>
+            </tr>
+            <tr>
+              <td>Jerome Bell</td>
+              <td>Google</td>
+              <td>(629) 555-0129</td>
+              <td>jerome@google.com</td>
+              <td>Réunion</td>
+              <td><div>Active</div></td>
+            </tr>
+            <tr>
+              <td>Kathryn Murphy</td>
+              <td>Microsoft</td>
+              <td>(406) 555-0120</td>
+              <td>kathryn@microsoft.com</td>
+              <td>Curaçao</td>
+              <td><div>Active</div></td>
+            </tr>
+            <tr>
+              <td>Jacob Jones</td>
+              <td>Yahoo</td>
+              <td>(208) 555-0112</td>
+              <td>jacob@yahoo.com</td>
+              <td>Brazil</td>
+              <td><div>Active</div></td>
+            </tr>
+            <tr>
+              <td>Kristin Watson</td>
+              <td>Facebook</td>
+              <td>(704) 555-0127</td>
+              <td>kristin@facebook.com</td>
+              <td>Åland Islands</td>
+              <td><div>Inactive</div></td>
+            </tr>
+          </table>
 
-            <div class="page-info">
-              <p class="page-info__text">
-                Showing data <span>1</span> to <span>8</span> of <span>256K</span> entries
-              </p>
-              <div class="page-info__button-wrapper">
-                <button class="page-info__button" type="button">
-                  <svg class="page-info__icon">
-                    <use href="./svg/sprite.svg#icon-arrow-small"></use>
-                  </svg>
-                </button>
-                <button class="page-info__button" type="button">1</button>
-                <button class="page-info__button" type="button">2</button>
-                <button class="page-info__button" type="button">3</button>
-                <button class="page-info__button" type="button">4</button>
-                <span class="page-info__dots">...</span>
-                <button class="page-info__button">40</button>
-                <button class="page-info__button" type="button">
-                  <svg class="page-info__icon">
-                    <use href="./svg/sprite.svg#icon-arrow-small"></use>
-                  </svg>
-                </button>
-              </div>
+          <div class="page-info">
+            <p class="page-info__text">
+              Showing data <span>1</span> to <span>8</span> of <span>256K</span> entries
+            </p>
+            <div class="page-info__button-wrapper">
+              <button class="page-info__button" type="button">
+                <svg class="page-info__icon">
+                  <use href="./svg/sprite.svg#icon-arrow-small"></use>
+                </svg>
+              </button>
+              <button class="page-info__button" type="button">1</button>
+              <button class="page-info__button" type="button">2</button>
+              <button class="page-info__button" type="button">3</button>
+              <button class="page-info__button" type="button">4</button>
+              <span class="page-info__dots">...</span>
+              <button class="page-info__button">40</button>
+              <button class="page-info__button" type="button">
+                <svg class="page-info__icon">
+                  <use href="./svg/sprite.svg#icon-arrow-small"></use>
+                </svg>
+              </button>
             </div>
-          </section>
-        </div>
+          </div>
+        </section>
       </div>
     </main>
   </body>
