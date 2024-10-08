@@ -19,9 +19,20 @@ $breakpoints: (
 );
 
 // Fonts
-$font-base: 'Poppins', sans-serif;
+$font-primary: 'Poppins', sans-serif;
 
 // Colors
-$color-primary: #58519d;
-$color-secondary: #8fbfba;
-$color-accent: #9a3553;
+$color-text-primary: #292d32;
+$color-text-secondary: #9197b3;
+
+$color-background-primary: #ffffff;
+$color-background-secondary: #f9fbff;
+
+$color-text-active: #008767;
+$color-active: #16c098;
+$color-text-inactive: #df0404;
+$color-inactive: #ffc5c5;
+$color-text-selected: #ffffff;
+$color-selected: #5932ea;
+
+$color-accessory: #b5b7c0;
