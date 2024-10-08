@@ -29,92 +29,102 @@
 
   <body>
     <aside class="sidebar">
-      <h1>
-        <svg><use href="./svg/sprite.svg#icon-setting"></use></svg>Dashboard<span>v.01</span>
+      <h1 class="sidebar-title">
+        <svg class="sidebar-title__icon"><use href="./svg/sprite.svg#icon-setting"></use></svg
+        >Dashboard<span class="sidebar-title__version">v.01</span>
       </h1>
-      <nav>
-        <ul>
-          <li>
-            <a href=""
+      <nav class="menu">
+        <ul class="menu__list">
+          <li class="menu__item">
+            <a class="menu__link" href=""
               ><div>
-                <svg><use href="./svg/sprite.svg#icon-key"></use></svg>
+                <svg class="menu__icon-left"><use href="./svg/sprite.svg#icon-key"></use></svg>
                 Dashboard
               </div>
-              <svg><use href="./svg/sprite.svg#icon-arrow"></use></svg
+              <svg class="menu__icon-right"><use href="./svg/sprite.svg#icon-arrow"></use></svg
             ></a>
           </li>
-          <li>
-            <a href=""
+          <li class="menu__item">
+            <a class="menu__link" href=""
               ><div>
-                <svg><use href="./svg/sprite.svg#icon-cube"></use></svg>
+                <svg class="menu__icon-left"><use href="./svg/sprite.svg#icon-cube"></use></svg>
                 Product
               </div>
-              <svg><use href="./svg/sprite.svg#icon-arrow"></use></svg
+              <svg class="menu__icon-right"><use href="./svg/sprite.svg#icon-arrow"></use></svg
             ></a>
           </li>
-          <li>
-            <a href=""
+          <li class="menu__item">
+            <a class="menu__link" href=""
               ><div>
-                <svg><use href="./svg/sprite.svg#icon-person"></use></svg>
+                <svg class="menu__icon-left"><use href="./svg/sprite.svg#icon-person"></use></svg>
                 Customers
               </div>
-              <svg><use href="./svg/sprite.svg#icon-arrow"></use></svg
+              <svg class="menu__icon-right"><use href="./svg/sprite.svg#icon-arrow"></use></svg
             ></a>
           </li>
-          <li>
-            <a href=""
+          <li class="menu__item">
+            <a class="menu__link" href=""
               ><div>
-                <svg><use href="./svg/sprite.svg#icon-wallet"></use></svg>
+                <svg class="menu__icon-left"><use href="./svg/sprite.svg#icon-wallet"></use></svg>
                 Income
               </div>
-              <svg><use href="./svg/sprite.svg#icon-arrow"></use></svg
+              <svg class="menu__icon-right"><use href="./svg/sprite.svg#icon-arrow"></use></svg
             ></a>
           </li>
-          <li>
-            <a href=""
+          <li class="menu__item">
+            <a class="menu__link" href=""
               ><div>
-                <svg><use href="./svg/sprite.svg#icon-discount"></use></svg>
+                <svg class="menu__icon-left"><use href="./svg/sprite.svg#icon-discount"></use></svg>
                 Promote
               </div>
-              <svg><use href="./svg/sprite.svg#icon-arrow"></use></svg>
+              <svg class="menu__icon-right"><use href="./svg/sprite.svg#icon-arrow"></use></svg>
             </a>
           </li>
-          <li>
-            <a href=""
+          <li class="menu__item">
+            <a class="menu__link" href=""
               ><div>
-                <svg><use href="./svg/sprite.svg#icon-question"></use></svg>
+                <svg class="menu__icon-left"><use href="./svg/sprite.svg#icon-question"></use></svg>
                 Help
               </div>
-              <svg><use href="./svg/sprite.svg#icon-arrow"></use></svg>
+              <svg class="menu__icon-right"><use href="./svg/sprite.svg#icon-arrow"></use></svg>
             </a>
           </li>
         </ul>
       </nav>
-      <div>
-        <img />
-        <div>
-          <p>Evano</p>
-          <p>Project Manager</p>
+      <div class="user-info">
+        <img class="user-info__image" src="./images/photo.webp" alt="Evano" />
+        <div class="user-info__text">
+          <p class="user-info__name">Evano</p>
+          <p class="user-info__position">Project Manager</p>
         </div>
       </div>
     </aside>
 
-    <section class="sidebar">
-      <p>Hello Evano 👋🏼,</p>
+    <main class="background">
+      <p class="welcome-text">Hello, <span>Evano</span> 👋🏼</p>
 
-      <div>
-        <div>
-          <div>
-            <h2>All Customers</h2>
-            <p>Active Members</p>
+      <section class="customers">
+        <div class="customers-about">
+          <div class="customers-about__text">
+            <h2 class="customers-about__title">All Customers</h2>
+            <p class="customers-about__category">Active Members</p>
           </div>
-          <form>
-            <svg><use href="./svg/sprite.svg#icon-search"></use></svg>
-            <input type="text" placeholder="Search" />
+          <form class="search-form" name="search_form">
+            <label for="search" class="visually-hidden">Search</label>
+            <input
+              class="search-form__input"
+              name="search"
+              type="text"
+              placeholder="Search"
+              id="search"
+            />
+            <button class="search-form__button" type="submit">
+              <svg class="search-form__icon"><use href="./svg/sprite.svg#icon-search"></use></svg>
+            </button>
           </form>
         </div>
 
-        <table>
+        <table class="customers-table">
           <tr>
             <th>Customer Name</th>
             <th>Company</th>
@@ -189,24 +199,30 @@
           </tr>
         </table>
 
-        <div>
-          <p>Showing data 1 to 8 of 256K entries</p>
-          <div>
-            <button>
-              <svg><use href="./svg/sprite.svg#icon-arrow-small"></use></svg>
+        <div class="page-info">
+          <p class="page-info__text">
+            Showing data <span>1</span> to <span>8</span> of <span>256K</span> entries
+          </p>
+          <div class="page-info__button-wrapper">
+            <button class="page-info__button" type="button">
+              <svg class="page-info__icon">
+                <use href="./svg/sprite.svg#icon-arrow-small"></use>
+              </svg>
             </button>
-            <button>1</button>
-            <button>2</button>
-            <button>3</button>
-            <button>4</button>
-            <span>...</span>
-            <button>40</button>
-            <button>
-              <svg><use href="./svg/sprite.svg#icon-arrow-small"></use></svg>
+            <button class="page-info__button" type="button">1</button>
+            <button class="page-info__button" type="button">2</button>
+            <button class="page-info__button" type="button">3</button>
+            <button class="page-info__button" type="button">4</button>
+            <span class="page-info__dots">...</span>
+            <button class="page-info__button">40</button>
+            <button class="page-info__button" type="button">
+              <svg class="page-info__icon">
+                <use href="./svg/sprite.svg#icon-arrow-small"></use>
+              </svg>
             </button>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </main>
   </body>
 </html>
