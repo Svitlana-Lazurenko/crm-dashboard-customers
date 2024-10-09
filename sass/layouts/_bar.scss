@@ -1,24 +1,26 @@
 .bar {
-  padding: rem(20) rem(10);
+  padding: rem(16);
   @include media(sm) {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     min-width: rem(200);
   }
-  @include media(md) {
+  @include media(def) {
+    padding: rem(36);
     min-width: rem(306);
   }
 
   .menu {
     margin-bottom: rem(40);
+
     &__list {
       display: flex;
       flex-direction: row;
       gap: rem(3);
       @include media(sm) {
         flex-direction: column;
-        gap: rem(5);
+        gap: rem(20);
       }
     }
     &__item {
@@ -33,7 +35,6 @@
       }
     }
     &__link {
-      padding: rem(5);
       width: 100%;
       height: 100%;
       display: flex;
@@ -67,7 +68,7 @@
       align-items: center;
       width: 100%;
       height: 100%;
-      gap: rem(5);
+      gap: rem(14);
       @media (max-width: 479px) {
         margin: 0 auto;
         justify-content: center;
@@ -116,7 +117,8 @@
   .user-info {
     display: flex;
     align-items: center;
-    gap: rem(10);
+    gap: rem(12);
+    margin-bottom: rem(20);
 
     .user-info__image-thumb {
       display: block;
