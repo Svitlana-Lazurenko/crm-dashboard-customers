@@ -1,25 +1,60 @@
 .customers {
 }
 .customers-about {
+  @include media(md) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 .customers-about__text {
 }
 .customers-about__title {
+  font-size: rem(22);
+  font-weight: 600;
 }
 .customers-about__category {
+  font-size: rem(14);
+  color: $color-active;
 }
 
 .customers-table {
+  @media (max-width: 767px) {
+    display: block;
+    overflow: scroll;
+  }
 }
 .page-info {
+  @include media(md) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 .page-info__text {
 }
 .page-info__button-wrapper {
+  font-size: rem(12);
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: rem(5);
 }
 .page-info__button {
+  width: rem(20);
+  height: rem(20);
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &.is-active {
+  }
 }
 .page-info__icon {
+  width: rem(20);
+  height: rem(20);
+  &--right {
+    transform: scale(-1);
+  }
 }
 .page-info__dots {
 }

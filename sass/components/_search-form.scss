@@ -1,9 +1,32 @@
 .search-form {
+  position: relative;
+  display: inline-block;
 }
 
 .search-form__input {
+  padding-left: rem(30);
+  width: rem(216);
+  height: rem(38);
+  border-radius: 8px;
+  background-color: $color-accessory-light;
+  border: none;
+  &::placeholder {
+    color: $color-accessory-dark;
+    font-size: rem(12);
+  }
 }
 .search-form__button {
+  position: absolute;
+  top: 50%;
+  left: 7%;
+  transform: translate(-50%, -50%);
+  width: rem(24);
+  height: rem(24);
+  padding: 0;
+  border: none;
+  background: transparent;
 }
 .search-form__icon {
+  width: rem(24);
+  height: rem(24);
 }

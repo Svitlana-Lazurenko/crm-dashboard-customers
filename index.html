@@ -29,7 +29,7 @@
 
   <body>
     <header class="header">
-      <div class="container container--no-gap container--flex">
+      <div class="container container--flex">
         <h1 class="title">
           <svg class="title__icon"><use href="./svg/sprite.svg#icon-setting"></use></svg
           >Dashboard<span class="title__version">v.01</span>
@@ -39,70 +39,70 @@
     </header>
 
     <main>
-      <div class="container container--no-gap container--flex">
-        <aside class="sidebar">
+      <div class="container container--flex">
+        <div class="bar">
           <nav class="menu">
             <ul class="menu__list">
               <li class="menu__item">
                 <a class="menu__link" href=""
-                  ><div>
-                    <svg class="menu__icon-left"><use href="./svg/sprite.svg#icon-key"></use></svg>
-                    Dashboard
+                  ><div class="menu__icon-and-text">
+                    <svg class="menu__icon"><use href="./svg/sprite.svg#icon-key"></use></svg>
+                    <span class="menu__text">Dashboard</span>
                   </div>
-                  <svg class="menu__icon-right"><use href="./svg/sprite.svg#icon-arrow"></use></svg
+                  <svg class="menu__icon-arrow"><use href="./svg/sprite.svg#icon-arrow"></use></svg
                 ></a>
               </li>
               <li class="menu__item">
                 <a class="menu__link" href=""
-                  ><div>
-                    <svg class="menu__icon-left"><use href="./svg/sprite.svg#icon-cube"></use></svg>
-                    Product
+                  ><div class="menu__icon-and-text">
+                    <svg class="menu__icon"><use href="./svg/sprite.svg#icon-cube"></use></svg>
+                    <span class="menu__text">Product</span>
                   </div>
-                  <svg class="menu__icon-right"><use href="./svg/sprite.svg#icon-arrow"></use></svg
+                  <svg class="menu__icon-arrow"><use href="./svg/sprite.svg#icon-arrow"></use></svg
                 ></a>
               </li>
               <li class="menu__item">
-                <a class="menu__link" href=""
-                  ><div>
-                    <svg class="menu__icon-left">
+                <a class="menu__link is-active" href=""
+                  ><div class="menu__icon-and-text">
+                    <svg class="menu__icon">
                       <use href="./svg/sprite.svg#icon-person"></use>
                     </svg>
-                    Customers
+                    <span class="menu__text">Customers</span>
                   </div>
-                  <svg class="menu__icon-right"><use href="./svg/sprite.svg#icon-arrow"></use></svg
+                  <svg class="menu__icon-arrow"><use href="./svg/sprite.svg#icon-arrow"></use></svg
                 ></a>
               </li>
               <li class="menu__item">
                 <a class="menu__link" href=""
-                  ><div>
-                    <svg class="menu__icon-left">
+                  ><div class="menu__icon-and-text">
+                    <svg class="menu__icon">
                       <use href="./svg/sprite.svg#icon-wallet"></use>
                     </svg>
-                    Income
+                    <span class="menu__text">Income</span>
                   </div>
-                  <svg class="menu__icon-right"><use href="./svg/sprite.svg#icon-arrow"></use></svg
+                  <svg class="menu__icon-arrow"><use href="./svg/sprite.svg#icon-arrow"></use></svg
                 ></a>
               </li>
               <li class="menu__item">
                 <a class="menu__link" href=""
-                  ><div>
-                    <svg class="menu__icon-left">
+                  ><div class="menu__icon-and-text">
+                    <svg class="menu__icon">
                       <use href="./svg/sprite.svg#icon-discount"></use>
                     </svg>
-                    Promote
+                    <span class="menu__text">Promote</span>
                   </div>
-                  <svg class="menu__icon-right"><use href="./svg/sprite.svg#icon-arrow"></use></svg>
+                  <svg class="menu__icon-arrow"><use href="./svg/sprite.svg#icon-arrow"></use></svg>
                 </a>
               </li>
               <li class="menu__item">
                 <a class="menu__link" href=""
-                  ><div>
-                    <svg class="menu__icon-left">
+                  ><div class="menu__icon-and-text">
+                    <svg class="menu__icon">
                       <use href="./svg/sprite.svg#icon-question"></use>
                     </svg>
-                    Help
+                    <span class="menu__text">Help</span>
                   </div>
-                  <svg class="menu__icon-right"><use href="./svg/sprite.svg#icon-arrow"></use></svg>
+                  <svg class="menu__icon-arrow"><use href="./svg/sprite.svg#icon-arrow"></use></svg>
                 </a>
               </li>
             </ul>
@@ -114,7 +114,7 @@
               <p class="user-info__position">Project Manager</p>
             </div>
           </div>
-        </aside>
+        </div>
 
         <section class="customers">
           <div class="customers-about">
@@ -220,18 +220,18 @@
             </p>
             <div class="page-info__button-wrapper">
               <button class="page-info__button" type="button">
-                <svg class="page-info__icon">
+                <svg class="page-info__icon page-info__icon--left">
                   <use href="./svg/sprite.svg#icon-arrow-small"></use>
                 </svg>
               </button>
-              <button class="page-info__button" type="button">1</button>
+              <button class="page-info__button is-active" type="button">1</button>
               <button class="page-info__button" type="button">2</button>
               <button class="page-info__button" type="button">3</button>
               <button class="page-info__button" type="button">4</button>
               <span class="page-info__dots">...</span>
               <button class="page-info__button">40</button>
               <button class="page-info__button" type="button">
-                <svg class="page-info__icon">
+                <svg class="page-info__icon page-info__icon--right">
                   <use href="./svg/sprite.svg#icon-arrow-small"></use>
                 </svg>
               </button>

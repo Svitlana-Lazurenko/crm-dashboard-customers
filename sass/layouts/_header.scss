@@ -1,10 +1,33 @@
 .header {
 }
 .title {
-}
-.title__icon {
-}
-.title__version {
+  display: flex;
+  align-items: center;
+  font-size: rem(26);
+  font-weight: 600;
+  @media (max-width: 767px) {
+    font-size: rem(36);
+  }
+  &__icon {
+    width: rem(37);
+    height: rem(37);
+    @media (max-width: 767px) {
+      width: rem(55);
+      height: rem(55);
+    }
+  }
+  &__version {
+    font-size: rem(10);
+    font-weight: 500;
+    margin-bottom: rem(-10);
+    color: $color-accessory;
+    @media (max-width: 767px) {
+      font-size: rem(14);
+      margin-bottom: rem(-15);
+    }
+  }
 }
 .welcome-text {
+  font-size: rem(24);
+  font-weight: 500;
 }
