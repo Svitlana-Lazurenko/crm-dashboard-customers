@@ -1,22 +1,16 @@
 .header {
   background-color: $color-background-primary;
 }
-.title {
+.logo {
+  padding: rem(20) rem(10);
   display: flex;
   align-items: center;
-  color: $color-text-tertiary;
-  font-size: rem(26);
-  font-weight: 600;
-  width: 23%;
-  font-size: rem(36);
-  padding: rem(20) rem(10);
 
   @include media(sm) {
-    font-size: rem(16);
+    min-width: rem(200);
   }
-
   @include media(md) {
-    font-size: rem(26);
+    min-width: rem(306);
   }
 
   &__icon {
@@ -29,6 +23,20 @@
     }
   }
 
+  &__name {
+    color: $color-text-tertiary;
+    font-weight: 600;
+    font-size: rem(36);
+
+    @include media(sm) {
+      font-size: rem(16);
+    }
+
+    @include media(md) {
+      font-size: rem(26);
+    }
+  }
+
   &__version {
     color: $color-accessory;
     font-weight: 500;
@@ -37,7 +45,7 @@
 
     @include media(sm) {
       font-size: rem(6);
-      margin-bottom: rem(-10);
+      margin-bottom: rem(-7.5);
     }
     @include media(md) {
       font-size: rem(14);
@@ -46,10 +54,11 @@
 }
 .welcome-text-wrapper {
   background-color: $color-background-primary;
-  width: 77%;
   position: relative;
   @include media(sm) {
+    flex-grow: 1;
     background-color: $color-background-secondary;
+    background-color: #871a1a;
   }
 }
 .welcome-text {

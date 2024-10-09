@@ -1,21 +1,21 @@
 .customers {
-  background-color: $color-background-secondary;
-
   @include media(sm) {
+    flex-grow: 1;
     padding: rem(20);
-    width: 77%;
+    overflow: hidden;
+    background-color: $color-background-secondary;
+    background-color: #871a1a;
   }
 
   .customers-inner {
     background-color: $color-background-primary;
     padding: rem(20);
     border-radius: rem(15);
-    // border: 1px solid red;
   }
 }
 
 .customers-about {
-  @include media(sm) {
+  @include media(ms) {
     display: flex;
     justify-content: space-between;
   }
@@ -48,13 +48,10 @@
   font-size: rem(14);
   font-weight: 500;
   border-collapse: collapse;
-  @media (max-width: 731px) {
+  overflow: auto;
+  width: 100%;
+  @media (max-width: 945px) {
     display: block;
-    overflow: auto;
-  }
-
-  @include media(sm) {
-    width: 100%;
   }
 
   & th {
@@ -81,9 +78,10 @@
     }
   }
 }
+
 .customers-page-info {
-  @include media(sm) {
-    color: $color-accessory-dark;
+  color: $color-accessory-dark;
+  @include media(ms) {
     display: flex;
     justify-content: space-between;
   }
