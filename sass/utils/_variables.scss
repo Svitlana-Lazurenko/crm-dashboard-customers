@@ -24,12 +24,14 @@ $font-primary: 'Poppins', sans-serif;
 // Colors
 $color-text-primary: #292d32;
 $color-text-secondary: #9197b3;
+$color-text-tertiary: #000000;
 
 $color-background-primary: #ffffff;
 $color-background-secondary: #f9fbff;
 
 $color-text-active: #008767;
-$color-active: #16c098;
+$color-text-active-light: #16c098;
+$color-active: #16c09876;
 $color-text-inactive: #df0404;
 $color-inactive: #ffc5c5;
 $color-text-selected: #ffffff;
@@ -38,3 +40,4 @@ $color-selected: #5932ea;
 $color-accessory-light: #e7e7e7;
 $color-accessory: #b5b7c0;
 $color-accessory-dark: #b5b7c0;
+$color-accessory-extra-dark: #757575;

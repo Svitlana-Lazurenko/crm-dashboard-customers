@@ -21,11 +21,10 @@
   }
 
   &--full {
-    max-width: 100%;
   }
 
   &--flex {
-    @include media(md) {
+    @include media(sm) {
       display: flex;
     }
   }
