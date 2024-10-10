@@ -1,6 +1,7 @@
 .header {
   background-color: $color-background-primary;
 }
+
 .logo {
   padding: rem(16);
   display: flex;
@@ -9,6 +10,7 @@
   @include media(sm) {
     min-width: rem(200);
   }
+
   @include media(def) {
     padding: rem(36);
     min-width: rem(306);
@@ -57,6 +59,7 @@
     }
   }
 }
+
 .welcome-text-wrapper {
   background-color: $color-background-primary;
   padding: rem(19) 0 0 rem(16);

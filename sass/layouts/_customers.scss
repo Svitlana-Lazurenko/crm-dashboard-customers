@@ -4,6 +4,7 @@
     padding: 0 rem(20) rem(36);
     overflow: hidden;
     background-color: $color-background-secondary;
+
     @include media(def) {
       padding: 0 rem(70) rem(36);
     }
@@ -18,6 +19,7 @@
 
 .customers-about {
   margin-bottom: rem(40);
+
   @include media(ms) {
     display: flex;
     justify-content: space-between;
@@ -59,6 +61,7 @@
   overflow: auto;
   width: 100%;
   margin-bottom: rem(30);
+
   @media (max-width: 945px) {
     display: block;
   }
@@ -93,6 +96,7 @@
 
 .customers-page-info {
   color: $color-accessory-dark;
+
   @include media(ms) {
     display: flex;
     justify-content: space-between;
@@ -101,13 +105,16 @@
   &__text {
     font-size: rem(14);
     font-weight: 500;
+
     @media (max-width: 639px) {
       margin-bottom: rem(30);
     }
+
     @include media(ms) {
       margin-right: rem(10);
     }
   }
+
   &__button-wrapper {
     color: $color-text-primary;
     font-size: rem(12);
@@ -117,6 +124,7 @@
     gap: rem(12);
     justify-content: center;
   }
+
   &__button {
     width: rem(25);
     height: rem(25);
@@ -132,13 +140,12 @@
       color: $color-text-selected;
     }
   }
+
   &__icon {
     width: rem(8);
     height: rem(8);
     &--right {
       transform: scale(-1);
     }
-  }
-  &__dots {
   }
 }

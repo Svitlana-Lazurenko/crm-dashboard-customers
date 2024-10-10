@@ -20,9 +20,6 @@
     padding: 0;
   }
 
-  &--full {
-  }
-
   &--flex {
     @include media(sm) {
       display: flex;
