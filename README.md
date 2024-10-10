@@ -1,4 +1,4 @@
-### Markup of the "Customers" page for the CRM "Dashboard"
+# Markup of the "Customers" page for the CRM "Dashboard"
 
 ## The project used:
 
@@ -10,7 +10,7 @@
 
 The markup was done without using frameworks.
 
-# Note:
+### Note:
 
 Compilation CSS from SCSS was created using the plugin for VSCode "Live Sass Compiler" and with
 autoprefix settings: ["> 1%", "last 2 versions"]
