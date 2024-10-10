@@ -1,0 +1,27 @@
+// ======================= styles for ml9 animation ========================
+
+.ml9 {
+  position: relative;
+}
+
+.ml9-text-wrapper {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+}
+
+.ml9-letter {
+  transform-origin: 50% 100%;
+  display: inline-block;
+}
+
+// ======================= styles for Montu animation ========================
+
+tbody {
+  background-color: rgb(225, 225, 225);
+}
+
+th,
+.montu {
+  background-color: #ffffff;
+}

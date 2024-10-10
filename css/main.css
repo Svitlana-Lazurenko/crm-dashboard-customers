@@ -1,3 +1,28 @@
+.ml9 {
+  position: relative;
+}
+
+.ml9-text-wrapper {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+}
+
+.ml9-letter {
+  -webkit-transform-origin: 50% 100%;
+          transform-origin: 50% 100%;
+  display: inline-block;
+}
+
+tbody {
+  background-color: rgb(225, 225, 225);
+}
+
+th,
+.montu {
+  background-color: #ffffff;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;

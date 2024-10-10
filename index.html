@@ -4,7 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="format-detection" content="telephone=no" />
-    <title>Customers</title>
+    <title>Dashboard</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
 
     <!-- Google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -28,6 +31,7 @@
   </head>
 
   <body>
+    <!------------------ Header ----------------------->
     <header class="header">
       <div class="container container--flex container--no-gap">
         <h1 class="logo">
@@ -46,6 +50,7 @@
     <main>
       <section>
         <div class="container container--flex container--no-gap">
+          <!----------------- Bar ------------------->
           <div class="bar">
             <nav class="menu">
               <ul class="menu__list">
@@ -130,12 +135,21 @@
             </div>
           </div>
 
+          <!----------------- Customers ------------------->
           <div class="customers">
             <div class="customers-inner">
               <div class="customers-about">
                 <div class="customers-about__text">
-                  <h2 class="customers-about__title">All Customers</h2>
-                  <p class="customers-about__category">Active Members</p>
+                  <h2 class="customers-about__title ml9">
+                    <span class="ml9-text-wrapper"
+                      ><span class="ml9-letters">All Customers</span></span
+                    >
+                  </h2>
+                  <p class="customers-about__category ml9">
+                    <span class="ml9-text-wrapper"
+                      ><span class="ml9-letters">Active Members</span></span
+                    >
+                  </p>
                 </div>
                 <form class="search-form" name="search_form">
                   <label for="search" class="visually-hidden">Search</label>
@@ -163,7 +177,7 @@
                   <th>Country</th>
                   <th>Status</th>
                 </tr>
-                <tr>
+                <tr class="montu">
                   <td>Jane Cooper</td>
                   <td>Microsoft</td>
                   <td>(225) 555-0118</td>
@@ -171,7 +185,7 @@
                   <td>United States</td>
                   <td><div>Active</div></td>
                 </tr>
-                <tr>
+                <tr class="montu">
                   <td>Floyd Miles</td>
                   <td>Yahoo</td>
                   <td>(205) 555-0100</td>
@@ -179,7 +193,7 @@
                   <td>Kiribati</td>
                   <td class="is-active"><div>Inactive</div></td>
                 </tr>
-                <tr>
+                <tr class="montu">
                   <td>Ronald Richards</td>
                   <td>Adobe</td>
                   <td>(302) 555-0107</td>
@@ -187,7 +201,7 @@
                   <td>Israel</td>
                   <td class="is-active"><div>Inactive</div></td>
                 </tr>
-                <tr>
+                <tr class="montu">
                   <td>Marvin McKinney</td>
                   <td>Tesla</td>
                   <td>(252) 555-0126</td>
@@ -195,7 +209,7 @@
                   <td>Iran</td>
                   <td><div>Active</div></td>
                 </tr>
-                <tr>
+                <tr class="montu">
                   <td>Jerome Bell</td>
                   <td>Google</td>
                   <td>(629) 555-0129</td>
@@ -203,7 +217,7 @@
                   <td>Réunion</td>
                   <td><div>Active</div></td>
                 </tr>
-                <tr>
+                <tr class="montu">
                   <td>Kathryn Murphy</td>
                   <td>Microsoft</td>
                   <td>(406) 555-0120</td>
@@ -211,7 +225,7 @@
                   <td>Curaçao</td>
                   <td><div>Active</div></td>
                 </tr>
-                <tr>
+                <tr class="montu">
                   <td>Jacob Jones</td>
                   <td>Yahoo</td>
                   <td>(208) 555-0112</td>
@@ -219,7 +233,7 @@
                   <td>Brazil</td>
                   <td><div>Active</div></td>
                 </tr>
-                <tr>
+                <tr class="montu">
                   <td>Kristin Watson</td>
                   <td>Facebook</td>
                   <td>(704) 555-0127</td>
@@ -257,5 +271,11 @@
         </div>
       </section>
     </main>
+
+    <!-- Anime.js-->
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+
+    <!-- Animations scripts-->
+    <script defer src="./js/animations.js"></script>
   </body>
 </html>
