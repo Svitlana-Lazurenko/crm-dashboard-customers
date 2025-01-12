@@ -4,7 +4,6 @@
 
 - Cross-browser (modern normalize, autoprefixer, reset of styles), semantic markup.
 - Preprocessor SCSS and BEM methodology.
-- Pixel Perfect markup.
 - Adaptive-responsive markup with a mobile version.
 - Animations of the appearance of elements with the JavaScript library Anime.js
 
